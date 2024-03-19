@@ -227,7 +227,7 @@ class Browser:
         data = {"stream_id": match.streamChannel,
                 "source": match.streamSource,
                 "stream_position_time": datetime.utcnow().isoformat(sep='T', timespec='milliseconds')+'Z',
-                "geolocation": {"code": "CZ", "area": "EU"},
+                "geolocation": {"code": "AU", "area": "OC"},
                 "tournament_id": match.tournamentId}
         headers = {"Origin": "https://lolesports.com"}
         res = self.client.post(
